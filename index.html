@@ -8,19 +8,19 @@
     <title>Decrypting Caesar's Cipher?</title>
 
     <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
 
   <body>
     <div class="wrapper">
       <div class="content" role="main">
         <h1 class="title">Decrypting Caesar's Cipher?</h1>
-        <div class="note">
+        <!--         <div class="note">
           <i>Ideally, use a laptop or desktop or have a keyboard with an 'Esc' button</i>
-        </div>
+        </div> -->
         <div>
           <p>
             With the simplicity of Caesar's Cipher, I think we can make educated
@@ -35,20 +35,24 @@
           </ul>
           <p>As such, try decrypting the next few statements.</p>
           <p>
-            Oh, and we only consider messages consisting of uppercase letters and spaces.
+            Oh, and we only consider messages consisting of uppercase letters
+            and spaces.
           </p>
         </div>
 
         <div>
-          <a
-            href="game.html"
-            style="display: inline; text-decoration: none; margin: 10px"
-          >
+          <a href="game.html" style="display: inline; text-decoration: none">
             Start!
           </a>
           <button style="display: inline" onclick="info()">
             Caesar's Cipher?
           </button>
+          <a
+            href="https://frtheatelier.github.io/aleatoire/"
+            style="display: inline; text-decoration: none"
+          >
+            See other projects
+          </a>
         </div>
 
         <dialog id="infoDialog">
@@ -63,10 +67,16 @@
             <br />
           </p>
 
-          <button onclick="showKeys()" style="margin-bottom: 10px">Show key table</button>
+          <button onclick="showKeys()" style="margin-bottom: 10px">
+            Show key table
+          </button>
           <p id="keyTable" class="tbl" style="display: none"></p>
-          <br/>
-          <i>Press 'Esc' to close this dialog</i>
+          <br />
+          <button
+            onclick="document.getElementById('infoDialog').style.display = 'none';"
+          >
+            Hide dialog
+          </button>
         </dialog>
       </div>
     </div>

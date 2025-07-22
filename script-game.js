@@ -54,7 +54,8 @@ document.getElementById("sp-hint").innerHTML = qs[r].hint;
 
 // SHOW HINT
 function hint() {
-  document.getElementById("hintDialog").showModal();
+  // document.getElementById("hintDialog").showModal();
+  document.getElementById('hintDialog').style.display = 'block';
 }
 
 function sp_hint() {
@@ -73,10 +74,10 @@ let guesses = 0;
 document.getElementById("guesses").innerHTML = guesses;
 
 function guess() {
-  let ans = document.getElementById("answer").value;
+  let ans = document.getElementById("answer").value.toUpperCase();
   if (ans == qs[r].answer) {
     document.getElementById("res").innerHTML = guesses + 1;
-    document.getElementById("winDialog").showModal();
+    document.getElementById("winDialog").style.display = 'block';
   } else {
     guesses += 1;
     document.getElementById("guesses").innerHTML = guesses;

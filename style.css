@@ -61,6 +61,13 @@
 END Glitch hello-app default styles
 ******************************************************************************/
 
+/* NOTE TO WHOEVER IS READING THIS
+* yea no shit this code kind of sucks. 
+* it's a mix of this and inline css that shit got confusing.
+* i will ratify it someday. but that involves overhauling the html just so i don't get lost.
+* so uh bear with it thanks.
+*/
+
 body {
   width: 80vw;
   margin: auto;
@@ -172,6 +179,11 @@ a {
   border-radius: 4px;
   padding: 0.5rem 1rem;
   color: var(--color-text);
+  
+  text-decoration: none;
+  
+  margin-right: 10px !important;
+  margin-top: 5px;
 }
 
 /* Subheading */

@@ -24,7 +24,8 @@ keys.appendChild(table);
 
 // SHOW INFO
 function info() {
-  document.getElementById("infoDialog").showModal();
+  // document.getElementById("infoDialog").showModal();
+  document.getElementById("infoDialog").style.display= "block";
 }
 
 function showKeys() {
